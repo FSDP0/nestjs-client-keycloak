@@ -1,7 +1,7 @@
 {
     "displayName": "nestjs-client-keycloak",
     "name": "@fsdp0/nestjs-client-keycloak",
-    "version": "0.0.002",
+    "version": "0.0.201",
     "description": "NestJS Keycloak JS Client Module Library",
     "readme": "./README.md",
     "author": {
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/FSDP0/nestjs-client-s3.git"
+        "url": "git+https://github.com/FSDP0/nestjs-client-keycloak.git"
     },
     "license": "Apache-2.0",
     "type": "commonjs",
