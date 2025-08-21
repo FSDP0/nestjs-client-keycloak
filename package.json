@@ -1,7 +1,7 @@
 {
     "displayName": "nestjs-client-keycloak",
     "name": "@fsdp0/nestjs-client-keycloak",
-    "version": "0.0.1",
+    "version": "0.0.001",
     "description": "NestJS Keycloak JS Client Module Library",
     "readme": "./README.md",
     "author": {
