@@ -1,11 +1,12 @@
 import { FactoryProvider, Provider } from "@nestjs/common";
 
-import { KEYCLOAK_CLIENT_MODULE_OPTION_TOKEN } from "../constants";
+import { KEYCLOAK_CLIENT_MODULE_OPTION_TOKEN } from "@constants";
+
 import type {
     KeycloakClientModuleAsyncOptions,
     KeycloakClientModuleOptions,
     KeycloakClientOptionFactory
-} from "../interfaces/keycloak-client.interface";
+} from "@interfaces";
 
 /**
  * @function

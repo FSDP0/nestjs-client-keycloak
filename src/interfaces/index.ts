@@ -1,1 +1,1 @@
-export * from "./keycloak-client.interface";
+export * from "./keycloak-client.interface.js";

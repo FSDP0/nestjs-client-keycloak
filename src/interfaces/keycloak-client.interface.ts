@@ -1,5 +1,5 @@
 import { ModuleMetadata, Type } from "@nestjs/common";
-import { KeycloakConfig, KeycloakInitOptions } from "keycloak-js";
+import { KeycloakConfig } from "keycloak-js";
 
 /**
  * @public
@@ -8,10 +8,7 @@ import { KeycloakConfig, KeycloakInitOptions } from "keycloak-js";
  *
  * @see         {@link  KeycloakConfig}
  */
-export type KeycloakClientModuleOptions = {
-    server: KeycloakConfig | string;
-    options?: KeycloakInitOptions;
-};
+export type KeycloakClientModuleOptions = KeycloakConfig;
 
 /**
  * @public

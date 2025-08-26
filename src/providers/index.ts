@@ -1,1 +1,1 @@
-export * from "./keycloak-client.provider";
+export * from "./keycloak-client.provider.js";

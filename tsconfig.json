@@ -1,19 +1,26 @@
 {
+    "extends": "./tsconfig.paths.json",
     "compilerOptions": {
-        "target": "es6",
-        "module": "nodenext",
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
         "declaration": true,
+        "target": "esnext",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "rewriteRelativeImportExtensions": true,
+        "lib": ["ESNext"],
+        "baseUrl": "./",
         "outDir": "dist",
         "rootDir": "src",
-        "baseUrl": ".",
-        "strict": true,
-        "noImplicitAny": false,
-        "strictNullChecks": false,
-        "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
         "emitDecoratorMetadata": true,
-        "inlineSourceMap": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
     },
     "include": [
         "src"
@@ -21,5 +28,5 @@
     "exclude": [
         "node_modules",
         "dist"
-    ]
+    ],
 }

@@ -1,9 +1,11 @@
 {
     "displayName": "nestjs-client-keycloak",
     "name": "@fsdp0/nestjs-client-keycloak",
-    "version": "0.0.201",
-    "description": "NestJS Keycloak JS Client Module Library",
+    "version": "0.0.207",
+    "description": "NestJS based on keycloak-js adapter library",
     "readme": "./README.md",
+    "license": "Apache-2.0",
+    "type": "module",
     "author": {
         "name": "Ray Lee",
         "email": "fsdp0dev@gmail.com"
@@ -12,16 +14,27 @@
         "type": "git",
         "url": "git+https://github.com/FSDP0/nestjs-client-keycloak.git"
     },
-    "license": "Apache-2.0",
-    "type": "commonjs",
+    "publishConfig": {
+        "access": "public",
+        "registry": " https://registry.npmjs.org"
+    },
     "main": "dist/index.js",
-    "types": "dist/index.d.ts",
     "files": [
         "dist"
     ],
+    "exports": {
+        ".": "./dist/index.js",
+        "./interfaces": "./dist/interfaces/index.js",
+        "./providers": "./dist/providers/index.js",
+        "./services": "./dist/services/index.js",
+        "./constants": "./dist/constants/index.js",
+        "./modules": "./dist/modules/index.js"
+    },
     "scripts": {
         "compile": "tsc",
-        "build": "rimraf dist & node --run compile",
+        "build:clean": "rimraf dist",
+        "prebuild": "node --run build:clean",
+        "build": "node --run compile",
         "prepublishOnly": "node --run build"
     },
     "keywords": [

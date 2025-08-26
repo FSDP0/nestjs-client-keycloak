@@ -1,12 +1,9 @@
 import { DynamicModule, Module } from "@nestjs/common";
 
-import type { KeycloakClientModuleAsyncOptions, KeycloakClientModuleOptions } from "./interfaces";
-
-import { KEYCLOAK_CLIENT_MODULE_OPTION_TOKEN } from "./constants";
-
-import { createAsyncKeycloakClientOptionProviders } from "./providers";
-
-import { KeycloakClientService } from "./services";
+import type { KeycloakClientModuleAsyncOptions, KeycloakClientModuleOptions } from "@interfaces";
+import { KEYCLOAK_CLIENT_MODULE_OPTION_TOKEN } from "@constants";
+import { createAsyncKeycloakClientOptionProviders } from "@providers";
+import { KeycloakClientService } from "@services";
 
 @Module({
     providers: [KeycloakClientService],
